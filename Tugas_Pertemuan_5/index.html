@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Toko Online Sederhana</h1>
+        <p>Silakan Pilih Produk yang Anda Inginkan</p>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="search-input" placeholder="Cari produk...">
+    </div>
+
+    <div class="container">
+        <!-- Daftar Produk -->
+        <div class="product-list" id="product-list"></div>
+
+        <!-- Panel Keranjang -->
+        <div class="cart-panel">
+            <button id="toggle-cart">Buka/Tutup Keranjang</button>
+            <h2>Keranjang Belanja</h2>
+            <ul class="cart-items" id="cart-items"></ul>
+            
+            <p><strong>Total Item: <span id="cart-count">0</span></strong></p>
+            <p><strong>Total Harga: <span id="cart-total">0</span></strong></p>
+            
+            <div class="cart-actions">
+                <button id="empty-cart">Kosongkan Keranjang</button>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+
+            <div class="summary-box" id="summary-box">
+                <h3>Ringkasan Pesanan</h3>
+                <p><strong>Nama Pembeli:</strong> <span id="summary-name"></span></p>
+                <p><strong>Daftar Item:</strong></p>
+                <ul id="summary-list"></ul>
+                <p><strong>Total Bayar: Rp <span id="summary-total">0</span></strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
