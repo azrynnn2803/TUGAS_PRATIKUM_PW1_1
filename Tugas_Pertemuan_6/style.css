@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 6px 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #39e600;
+}
+
+.sel-biru {
+    background-color: #66d9ff;
+}
+
+.sel-kuning {
+    background-color: #ffe600;
+}
